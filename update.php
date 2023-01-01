@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
     $mobile=$_POST['mobile'];
     $password=$_POST['password'];
     //sql query => update selected row data
-    $sql="update `crud` set username='$username',name='$name',email='$email',mobile='$mobile',passwprd='$password' where id=$id";
+    $sql="update `crud` set username='$username',name='$name',email='$email',mobile='$mobile',password='$password' where id=$id";
     //variable for query execution
     $res= mysqli_query($conn,$sql);
     //checking of successful query execution using variable declared
